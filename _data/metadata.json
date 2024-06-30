@@ -1,0 +1,45 @@
+{
+    "title": "Leyi Huang | Portfolio",
+    "clips": [
+        {
+            "title": "Some Title",
+            "preview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iure accusamus sapiente doloremque consequuntur at placeat, eius voluptate recusandae! Recusandae autem nihil consectetur, aperiam unde cumque itaque nemo voluptatem harum.",
+            "url": "http://www.google.com",
+            "thumbnail": "https://picsum.photos/1920/1080",
+            "thumbnailAlt": "Some alt text",
+            "creditText": "CBS6 Albany",
+            "creditUrl": "http://www.google.com"
+        },
+        {
+            "title": "Another Title",
+            "preview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iure accusamus sapiente doloremque consequuntur at placeat, eius voluptate recusandae! Recusandae autem nihil consectetur, aperiam unde cumque itaque nemo voluptatem harum.",
+            "url": "http://www.google.com",
+            "thumbnail": "https://picsum.photos/1920/1080",
+            "thumbnailAlt": "Some alt text",
+            "creditText": "CBS6 Albany",
+            "creditUrl": "http://www.google.com"
+        },
+        {
+            "title": "Some Title",
+            "preview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iure accusamus sapiente doloremque consequuntur at placeat, eius voluptate recusandae! Recusandae autem nihil consectetur, aperiam unde cumque itaque nemo voluptatem harum.",
+            "url": "http://www.google.com",
+            "thumbnail": "https://picsum.photos/1920/1080",
+            "thumbnailAlt": "Some alt text",
+            "creditText": "CBS6 Albany",
+            "creditUrl": "http://www.google.com"
+        },
+        {
+            "title": "The Best Title",
+
+            "preview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iure accusamus sapiente doloremque consequuntur at placeat, eius voluptate recusandae! Recusandae autem nihil consectetur, aperiam unde cumque itaque nemo voluptatem harum.",
+            "url": "http://www.google.com",
+            "thumbnail": "https://picsum.photos/1920/1080",
+            "thumbnailAlt": "Some alt text",
+            "creditText": "CBS6 Albany",
+            "creditUrl": "http://www.google.com"
+        }
+    ],
+    "videoEmbed": {
+        
+    }
+}
