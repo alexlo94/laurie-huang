@@ -2,13 +2,13 @@
     "title": "Leyi Huang | Portfolio",
     "clips": [
         {
-            "title": "Some Title",
-            "preview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iure accusamus sapiente doloremque consequuntur at placeat, eius voluptate recusandae! Recusandae autem nihil consectetur, aperiam unde cumque itaque nemo voluptatem harum.",
-            "url": "http://www.google.com",
-            "thumbnail": "https://picsum.photos/1920/1080",
+            "title": "N.Y. launches HIV self-test giveaway campaign to address disparities, DOH says",
+            "preview": "Thursday, Jun. 27 is recognized as National HIV Testing Day. A digital HIV awareness campaign has been launched by the New York State Department of Health (DOH) to coincide with the occasion.",
+            "url": "https://cbs6albany.com/news/local/ny-launches-digital-hiv-awareness-and-free-self-test-kit-giveaway-campaign-lgbtq-aids-department-of-health-pride-prep#",
+            "thumbnail": "https://cbs6albany.com/news/local/gallery/ny-launches-digital-hiv-awareness-and-free-self-test-kit-giveaway-campaign-lgbtq-aids-department-of-health-pride-prep?photo=2",
             "thumbnailAlt": "Some alt text",
-            "creditText": "CBS6 Albany",
-            "creditUrl": "http://www.google.com"
+            "creditText": "With “Level up your self-love: check your status" marking the theme of this year's National HIV Testing Day, the DOH wrote in their Jun. 27 press release that a digital HIV awareness campaign has been launched to coincide with the occasion.(WRGB)",
+            "creditUrl": "https://cbs6albany.com/"
         },
         {
             "title": "Another Title",
@@ -20,8 +20,8 @@
             "creditUrl": "http://www.google.com"
         },
         {
-            "title": "Some Title",
-            "preview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iure accusamus sapiente doloremque consequuntur at placeat, eius voluptate recusandae! Recusandae autem nihil consectetur, aperiam unde cumque itaque nemo voluptatem harum.",
+            "title": "Man indicted for assaulting child to retaliate against federal trial witness",
+            "preview": "An 18-year-old Schenectady man was put behind bars for allegedly assaulting a child of a witness who testified in a federal criminal trial, according to the Northern District of New York United States Department of Justice.",
             "url": "http://www.google.com",
             "thumbnail": "https://picsum.photos/1920/1080",
             "thumbnailAlt": "Some alt text",
