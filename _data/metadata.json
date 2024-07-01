@@ -11,32 +11,32 @@
             "creditUrl": "https://cbs6albany.com/"
         },
         {
-            "title": "Another Title",
-            "preview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iure accusamus sapiente doloremque consequuntur at placeat, eius voluptate recusandae! Recusandae autem nihil consectetur, aperiam unde cumque itaque nemo voluptatem harum.",
-            "url": "http://www.google.com",
-            "thumbnail": "https://picsum.photos/1920/1080",
+            "title": "Brother mourns Canadian pilot: 'Where does one begin to describe Natalie Gillis?'",
+            "preview": "'Natalie was an amazing person. I'm sure if there was any way she could, she would have tried to avoid the houses,' said Mattew Yap, who traveled to Albany from Toronto to pick up the remains of Natalie Gillis, the Canadian pilot killed in the crash of Aircraft C-GKSI.",
+            "url": "https://cbs6albany.com/news/local/brother-of-canadian-pilot-killed-in-albany-crash-reflects-on-her-life-and-tragic-loss#",
+            "thumbnail": "https://cbs6albany.com/resources/media2/16x9/full/1900/center/80/15e805c7-1d52-46a1-89d5-0c2d11cc1938-Natalie.PNG",
             "thumbnailAlt": "Some alt text",
-            "creditText": "CBS6 Albany",
-            "creditUrl": "http://www.google.com"
+            "creditText": "Natalie Gillis (COURTESY: MATTHEW YAP)",
+            "creditUrl": "https://cbs6albany.com/"
         },
         {
             "title": "Man indicted for assaulting child to retaliate against federal trial witness",
             "preview": "An 18-year-old Schenectady man was put behind bars for allegedly assaulting a child of a witness who testified in a federal criminal trial, according to the Northern District of New York United States Department of Justice.",
-            "url": "http://www.google.com",
+            "url": "https://cbs6albany.com/news/local/man-accused-of-assaulting-witnesss-son-to-retaliate-against-federal-trial-testimony#",
             "thumbnail": "https://picsum.photos/1920/1080",
             "thumbnailAlt": "Some alt text",
-            "creditText": "CBS6 Albany",
-            "creditUrl": "http://www.google.com"
+            "creditText": "Man indicted for assaulting child to retaliate against federal trial witness.(WRGB)",
+            "creditUrl": "https://cbs6albany.com/"
         },
         {
-            "title": "The Best Title",
+            "title": "Lake George advocacy group protests State's use of controversial herbicide",
 
-            "preview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iure accusamus sapiente doloremque consequuntur at placeat, eius voluptate recusandae! Recusandae autem nihil consectetur, aperiam unde cumque itaque nemo voluptatem harum.",
-            "url": "http://www.google.com",
-            "thumbnail": "https://picsum.photos/1920/1080",
+            "preview": "Lake George Association made a statement on Tuesday, May 28, pushing back against New York State’s application of an aquatic herbicide to Lake George.",
+            "url": "https://cbs6albany.com/news/local/lake-george-advocacy-group-protests-states-use-of-controversial-herbicide#",
+            "thumbnail": "https://cbs6albany.com/resources/media2/16x9/full/1900/center/80/b71d399b-8427-4123-bbce-a0d5ade577d2-lakegeorge.JPG",
             "thumbnailAlt": "Some alt text",
-            "creditText": "CBS6 Albany",
-            "creditUrl": "http://www.google.com"
+            "creditText": "Lake George (WRGB)",
+            "creditUrl": "https://cbs6albany.com/"
         }
     ],
     "videoEmbed": {
