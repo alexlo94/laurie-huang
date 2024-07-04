@@ -1,13 +1,32 @@
 .writing-clip {
-    border-left: 0.5px solid;
+    border-left: 3.5px solid;
     border-radius: 0;
     padding-left: var(--s1);
+    transition: border 0.5s;
+
+    border-radius: 2px;
 
     h3 {
         line-height: calc(var(--line-height) * 0.9);
     }
 
+    p {
+        font-size: var(--s0);
+        line-height: 1.15;
+        max-width: var(--measure);
+    
+    }
+
+    a {
+        font-family: var(--font-sans-serif);
+        font-weight: 700;
+    }
+
     .frame{
         border-radius: 2px;
     }
+}
+
+.writing-clip:hover {
+    border-left: 7px solid;
 }

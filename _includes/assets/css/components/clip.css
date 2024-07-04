@@ -1,0 +1,100 @@
+.clip {
+    display: block;
+    position: relative;
+    overflow: hidden;
+
+    .clip-frame {
+        img {
+            -webkit-transition-duration: 25s;
+            transition-duration: 25s;
+            -webkit-transform: scale(1);
+            transform: scale(1);
+            -webkit-transform-origin: 25% 100%;
+            transform-origin: 25% 100%;
+            -webkit-filter:  saturate(0.6) brightness(1.2);
+            filter:  saturate(0.6) brightness(1.2);
+        }
+    }
+
+    .clip-frame {
+        border-radius: 5px;
+    }
+
+    .clip-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(1, 4, 19, 0.6);
+        z-index: 1;
+    }
+
+    .clip-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        z-index: 2;
+
+        justify-content: flex-end;
+        padding: var(--s-1) var(--s1);
+
+        h3 {
+            /* font-size: var(--s0); */
+            line-height: 1.15;
+        }
+
+        p {
+            font-family: var(--font-sans-serif);
+            font-weight: 700;
+        }
+
+        p::after {
+            content: "";
+        }
+    }
+}
+
+
+.clip:hover {
+    .clip-frame {
+        img{
+            -webkit-transform: scale(1.3) rotate(3deg);
+            transform: scale(1.3) rotate(3deg);
+            -webkit-transform-origin: 25% 25%; 
+            transform-origin: 25% 25%; 
+            -webkit-filter:  saturate(1.4) brightness(1.2);
+            filter:  saturate(1.4) brightness(1.2);
+        }
+    }
+}
+
+
+
+/* .burnsTest img {
+    -webkit-transition-duration: 25s;
+    transition-duration: 25s;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 25% 100%;
+    transform-origin: 25% 100%;
+    -webkit-filter:  saturate(0.6) brightness(1.2);
+    filter:  saturate(0.6) brightness(1.2);
+    
+  }
+  
+  .burnsTest img:hover {
+    -webkit-transform: scale(1.3) rotate(3deg);
+    transform: scale(1.3) rotate(3deg);
+    -webkit-transform-origin: 25% 25%; 
+    transform-origin: 25% 25%; 
+    -webkit-filter:  saturate(1.4) brightness(1.2);
+    filter:  saturate(1.4) brightness(1.2);
+  } */
