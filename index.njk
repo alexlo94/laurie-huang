@@ -26,12 +26,33 @@ tags: pages
         {%-endfor-%} #}
         </div>
         <div class="stack s5">
-            {%-for clip in metadata.clips-%}
+            {# {%-for clip in metadata.clips-%}
             <article class="stack s1 writing-clip">
                 <h3>{{ clip.title }}</h3>
                 <p>{{ clip.preview }}</p>
                 <p><a href="{{ clip.url }}">Read More</a></p>
             </article>
+            {%-endfor-%} #}
+            {%-for clip in metadata.clips-%}
+                {%-if clip.thumbnail == ""-%}
+                    <article class="stack s1 writing-clip">
+                        <h3>{{ clip.title }}</h3>
+                        <p>{{ clip.preview }}</p>
+                        <p><a href="{{ clip.url }}">Read More</a></p>
+                    </article>
+
+                {%-else-%}
+                    <article class="clip">
+                        <div class="stack clip-content">
+                            <h3>{{ clip.title }}</h3>
+                            <p><a href="{{ clip.url }}">Read More</a></p>
+                        </div>
+                        <div class="clip-background"></div>
+                        <div class="frame clip-frame">
+                            <img src="{{ clip.thumbnail }}" alt="{{ clip.thumbnailAlt }}"/>
+                        </div>
+                    </article>
+                {%-endif-%}
             {%-endfor-%}
         </div>
     </section>
