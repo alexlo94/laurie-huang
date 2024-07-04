@@ -1,0 +1,27 @@
+.frame {
+    --n: 16;
+    --d: 9;
+    aspect-ratio: var(--n) / var(--d);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frame>img,
+.frame>video,
+.frame>iframe {
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+}
+
+.frame.square {
+    --n: 1;
+    --d: 1;
+}
+
+.frame.portrait {
+    --n: 9;
+    --d: 16;
+}

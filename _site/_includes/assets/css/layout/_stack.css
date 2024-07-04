@@ -1,0 +1,53 @@
+.stack {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.stack>* {
+    margin-block: 0;
+}
+
+.stack>*+* {
+    margin-block-start: var(--s0, 1.5rem);
+}
+
+.stack.s1>*+* {
+    margin-block-start: var(--s1, 2rem);
+}
+
+.stack.s2>*+* {
+    margin-block-start: var(--s2, 2.5rem);
+}
+
+.stack.s3>*+* {
+    margin-block-start: var(--s3, 3rem);
+}
+
+.stack.s4>*+* {
+    margin-block-start: var(--s4, 3.5rem);
+}
+
+.stack.s5>*+* {
+    margin-block-start: var(--s5, 4rem);
+}
+
+.stack.s-1>*+* {
+    margin-block-start: var(--s-1, 1rem);
+}
+
+.stack.s-2>*+* {
+    margin-block-start: var(--s-2, 0.75rem);
+}
+
+.stack.s-3>*+* {
+    margin-block-start: var(--s-3, 0.5rem);
+}
+
+.stack.s-4>*+* {
+    margin-block-start: var(--s-4, 0.25rem);
+}
+
+.stack.s-5>*+* {
+    margin-block-start: var(--s-5, 0.125rem);
+}

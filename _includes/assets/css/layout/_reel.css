@@ -1,0 +1,39 @@
+/* .reel {
+    display: flex;
+    block-size: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-color: var(--color-lightest) var(--color-darkest);
+  }
+  
+  .reel::-webkit-scrollbar {
+    block-size: 1rem;
+  }
+  
+  .reel::-webkit-scrollbar-track {
+    background-color: var(--color-darkest);
+  }
+  
+  .reel::-webkit-scrollbar-thumb {
+    background-color: var(--color-darkest);
+    background-image: linear-gradient(var(--color-darkest) 0, var(--color-darkest) 0.25rem, var(--color-lightest) 0.25rem, var(--color-lightest) 0.75rem, var(--color-darkest) 0.75rem);
+  }
+  
+  .reel > * {
+    flex: 0 0 auto;
+  }
+  
+  
+  .reel > img {
+    block-size: 100%;
+    flex-basis: auto;
+    width: auto;
+  }
+  
+  .reel > * + * {
+    margin-inline-start: 1rem;
+  }
+  
+  .reel.overflowing {
+    padding-block-end: 1rem;
+  } */

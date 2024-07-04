@@ -4,16 +4,34 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="color-scheme" content="light dark" />
-    <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css"
-    />
+    <link rel="stylesheet" href="https://use.typekit.net/isq5vvd.css">
     <link rel="stylesheet" href="/_includes/assets/css/main.css">
     <title>{{ title or renderData.title or metadata.title }}</title>
   </head>
   <body>
-    <main class="container">
-      {{ layoutContent | safe }}
-    </main>
+    <div class="container with-sidebar">
+      <aside class="sidebar stack">
+        <hgroup class="stack s5">
+          <header class="stack">
+            <h1>Leyi Huang</h1>
+            <p>Journalist | Writer | Documentary Filmmaker</p>
+        </header>
+        <nav>
+          <ul class="stack">
+            <li><a href="#">About</a></li>
+            <li><a href="#writing-clips">Writing Clips</a></li>
+            <li><a href="#reels">Reels</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        </hgroup>
+        <footer>
+          <p> © Laurie Huang 2024 </p>
+        </footer>
+      </aside>
+      <main class="content">
+        {{ layoutContent | safe }}
+      </main>
+    </div>
   </body>
 </html>

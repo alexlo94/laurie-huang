@@ -1,0 +1,13 @@
+.writing-clip {
+    border-left: 0.5px solid;
+    border-radius: 0;
+    padding-left: var(--s1);
+
+    h3 {
+        line-height: calc(var(--line-height) * 0.9);
+    }
+
+    .frame{
+        border-radius: 2px;
+    }
+}

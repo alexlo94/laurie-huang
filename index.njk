@@ -3,55 +3,75 @@ layout: /layouts/base.njk
 permalink: "/"
 tags: pages
 ---
-
-    <!-- Header -->
-    <header>
-      <hgroup>
-        <h1>Leyi Huang</h1>
-        <p>Journalist | Writer | Documentary Filmmaker</p>
-      </hgroup>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Writing Clips</a></li>
-          <li><a href="#">Reels</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <!-- ./ Header -->
-    <main>
-        <section id="writing-clips">
-            <h2>Writing Clips</h2>
-            <p>In this section, you'll find the most recent articles I've written as a journalist in the newsroom.</p>
-            {%- for clip in metadata.clips -%}
-                <article class="writing-clip">
-                    <h3 class="clip-title">{{ clip.title }}</h3>
-                    <figure class="clip-thumbnail">
-                        <img src="{{ clip.thumbnail }}" alt="{{ clip.thumbnailAlt }}"/>
-                        <figcaption>Image credit: <a href="{{ clip.creditUrl }}">{{ clip.creditText }}</a></figcaption>
-                    </figure>
-                    <p class="clip-preview">{{ clip.preview }}</p>
-                    <p class="clip-cta"><a href="{{ clip.url }}">Read More</a></p>
-                </article>
-            {%- endfor -%}
-        </section>
-
-        <section id="reels">
-            <h2>Reels</h2>
-            <p>In this section, you'll find some kickass reels for my documentary stuff!</p>
-            <article class="writing-clip">
-                <h3 class="clip-title">Purple Ball...Room???</h3>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/kCUwIi7qd2M?si=GC0wnzbRJzReq9oS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <p class="clip-preview">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque voluptatum possimus pariatur officia magnam iste? Magni, molestiae earum culpa iste consectetur excepturi dolor accusamus dicta delectus quasi praesentium ipsa quidem!</p>
-                <p class="clip-cta"><a href="#">Do Something?</a></p>
+<div class="stack s5">
+    <section id="about" class="stack">
+        <h2>About</h2>
+        <p>Formerly a linguistic journal editor in China, Leyi Huang pivoted to impact-driven storytelling in 2021 when she woke up one day and decided to make a documentary film about an underground LGBTQ movement in China. Back then, all she had was a Sony DSLR, an iPhone, and her fervent passion for LGBTQ advocacy.</p>
+        <p>In 2022, Leyi brought her project, Purple Ballroom, to Chicago and launched a career as a journalist and documentary filmmaker. Below is some of her work.</p>
+    </section>
+    <section id="writing-clips" class="stack">
+        <h2>Writing Clips</h2>
+        <div class="stack s5">
+        {# {%-for clip in metadata.clips-%}
+            <article class="with-sidebar s3 writing-clip">
+                <aside class="frame">
+                    <img src="{{ clip.thumbnail }}" alt="{{ clip.thumbnailAlt }}"/>
+                </aside>
+                <main class="stack">
+                    <h3>{{ clip.title }}</h3>
+                    <p>{{ clip.preview }}</p>
+                    <p><a href="{{ clip.url }}">Read More</a></p>
+                </main>
             </article>
-            <div class="grid">
-                <p class="reel"><iframe src="https://player.vimeo.com/video/914391191?h=4aa4de9938" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></p>
-                <p class="reel"><iframe width="560" height="315" src="https://www.youtube.com/embed/kCUwIi7qd2M?si=GC0wnzbRJzReq9oS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p><p class="reel"><iframe src="https://player.vimeo.com/video/914391191?h=4aa4de9938" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></p>
-                <p class="reel"><iframe width="560" height="315" src="https://www.youtube.com/embed/kCUwIi7qd2M?si=GC0wnzbRJzReq9oS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p><p class="reel"><iframe src="https://player.vimeo.com/video/914391191?h=4aa4de9938" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></p>
-                <p class="reel"><iframe width="560" height="315" src="https://www.youtube.com/embed/kCUwIi7qd2M?si=GC0wnzbRJzReq9oS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p><p class="reel"><iframe src="https://player.vimeo.com/video/914391191?h=4aa4de9938" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></p>
-            </div>
-        </section>
-    </main>
+        {%-endfor-%} #}
+        </div>
+        <div class="stack s5">
+            {%-for clip in metadata.clips-%}
+            <article class="stack s1 writing-clip">
+                <h3>{{ clip.title }}</h3>
+                <p>{{ clip.preview }}</p>
+                <p><a href="{{ clip.url }}">Read More</a></p>
+            </article>
+            {%-endfor-%}
+        </div>
+    </section>
+    <section id="reels" class="stack">
+        <h2>Reels</h2>
+        <div class="stack s5">
+            <article class="stack reel">
+                <header class="stack s-5">
+                    <h3>Documentary Demo Reel</h3>
+                    <p class="reel-caption">Leyi Huang’s 2023 reel of short docs</p>
+                </header>
+                <figure class="frame">
+                    <iframe src="https://player.vimeo.com/video/873035725?h=80f20619fb" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                </figure>
+            </article>
+            <article class="stack reel">
+                <header class="stack s-5">
+                    <h3>Purple Ballroom</h3>
+                    <p class="reel-caption">Purple Ballroom (work-in-progress) is about a Chinese vogue dancer who founded the LGBTQ+ Ballroom scene in Canton, China, as a shelter for the local queer communities against stigma and alienation.</p>
+                </header>
+                <figure class="frame">
+                    <iframe src="https://player.vimeo.com/video/860084211?h=f149a7efb8" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                </figure>
+            </article>
+            <article class="stack reel">
+                <header class="stack s-5">
+                    <h3>Two Experimental Dance Videos</h3>
+                    <p class="reel-caption">Credit: Assistant Director of Photography</p>
+                </header>
+                <figure class="frame">
+                    <iframe width="640" height="360" src="https://www.youtube.com/embed/gnND1thqw9o?si=Hc6efRS2fswJZnF7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </figure>
+                <figure class="frame">
+                    <iframe width="640" height="360" src="https://www.youtube.com/embed/1-VWoAWYwPc?si=OdYIXX08AFFMWNPt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </figure>
+            </article>
+        </div>
+    </section>
+    <section id="contact" class="stack">
+        <h2>Contact</h2>
+        <p> With a focus on gender equity and social justice reporting, Leyi is always looking for creative collaboration on subject matter projects. If you are interested in bringing her to your production team, feel free to contact her through <a href="mailto:" class="email">email</a> or <a href="#" class="linkedin">LinkedIn</a></p>
+    </section>
+</div>

@@ -1,0 +1,57 @@
+---
+layout: /layouts/base.njk
+permalink: "/"
+tags: pages
+---
+
+    <!-- Header -->
+    <header>
+      <hgroup>
+        <h1>Leyi Huang</h1>
+        <p>Journalist | Writer | Documentary Filmmaker</p>
+      </hgroup>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Writing Clips</a></li>
+          <li><a href="#">Reels</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- ./ Header -->
+    <main>
+        <section id="writing-clips">
+            <h2>Writing Clips</h2>
+            <p>In this section, you'll find the most recent articles I've written as a journalist in the newsroom.</p>
+            {%- for clip in metadata.clips -%}
+                <article class="writing-clip">
+                    <h3 class="clip-title">{{ clip.title }}</h3>
+                    <figure class="clip-thumbnail">
+                        <img src="{{ clip.thumbnail }}" alt="{{ clip.thumbnailAlt }}"/>
+                        {# <figcaption>Image credit: <a href="{{ clip.creditUrl }}">{{ clip.creditText }}</a></figcaption> #}
+                    </figure>
+                    <p class="clip-preview">{{ clip.preview }}</p>
+                    <p class="clip-cta"><a href="{{ clip.url }}">Read More</a></p>
+                </article>
+            {%- endfor -%}
+        </section>
+
+        <section id="reels">
+            <h2>Reels</h2>
+            <p>In this section, you'll find some kickass reels for my documentary stuff!</p>
+            <article class="writing-clip">
+                <h3 class="clip-title">Purple Ball...Room???</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/kCUwIi7qd2M?si=GC0wnzbRJzReq9oS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p class="clip-preview">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque voluptatum possimus pariatur officia magnam iste? Magni, molestiae earum culpa iste consectetur excepturi dolor accusamus dicta delectus quasi praesentium ipsa quidem!</p>
+                <p class="clip-cta"><a href="#">Do Something?</a></p>
+            </article>
+            <div class="grid">
+                <p class="reel"><iframe src="https://player.vimeo.com/video/914391191?h=4aa4de9938" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></p>
+                <p class="reel"><iframe width="560" height="315" src="https://www.youtube.com/embed/kCUwIi7qd2M?si=GC0wnzbRJzReq9oS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p><p class="reel"><iframe src="https://player.vimeo.com/video/914391191?h=4aa4de9938" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></p>
+                <p class="reel"><iframe width="560" height="315" src="https://www.youtube.com/embed/kCUwIi7qd2M?si=GC0wnzbRJzReq9oS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p><p class="reel"><iframe src="https://player.vimeo.com/video/914391191?h=4aa4de9938" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></p>
+                <p class="reel"><iframe width="560" height="315" src="https://www.youtube.com/embed/kCUwIi7qd2M?si=GC0wnzbRJzReq9oS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p><p class="reel"><iframe src="https://player.vimeo.com/video/914391191?h=4aa4de9938" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></p>
+            </div>
+        </section>
+    </main>

@@ -1,85 +1,20 @@
-@media screen and (min-width: 1024px) {
-    article.writing-clip {
-        display: grid;
-        grid-template-areas:
-        "thumbnail  title"
-        "thumbnail   preview"
-        "thumbnail  cta";
-        grid-template-columns: 0.5fr 0.5fr;
-        gap: 2rem;
-    }
-    article > h3.clip-title {
-        grid-area: title;
-    }
+/* Base imports */
+@import "_reset.css";
+@import "_config.css";
+@import "_util.css";
 
-    article > p.clip-preview {
-        grid-area: preview;
-    }
+/* Layout imports */
+@import "/_includes/assets/css/layout/_cluster.css";
+@import "/_includes/assets/css/layout/_frame.css";
+@import "/_includes/assets/css/layout/_grid.css";
+@import "/_includes/assets/css/layout/_reel.css";
+@import "/_includes/assets/css/layout/_sidebar.css";
+@import "/_includes/assets/css/layout/_stack.css";
+@import "/_includes/assets/css/layout/_switcher.css";
 
-    article > p.clip-cta {
-        grid-area: cta;
-    }
-
-    article > figure.clip-thumbnail {
-        grid-area: thumbnail;
-        align-self: center;
-    }
-
-    article > iframe {
-        grid-area: thumbnail;
-        align-self: center;
-    }
-    
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
-    gap: 2rem;
-
-    > :last-child {
-        grid-column: span 2;
-    }
-}
-
-.reel {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    padding-top: 56.25%; /* 16:9 Aspect Ratio */
-}
-
-.reel iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-}
-
-/* article.writing-clip {
-    display: grid;
-    grid-template-areas:
-    "thumbnail  title"
-    "thumbnail   preview"
-    "thumbnail  cta";
-    grid-template-columns: 0.5fr 0.5fr;
-    gap: 2rem;
-}
-article > h3.clip-title {
-    grid-area: title;
-}
-
-article > p.clip-preview {
-    grid-area: preview;
-}
-
-article > p.clip-cta {
-    grid-area: cta;
-}
-
-article > figure.clip-thumbnail {
-    grid-area: thumbnail;
-} */
+/* Component imports */
+@import "/_includes/assets/css/components/container.css";
+@import "/_includes/assets/css/components/content.css";
+@import "/_includes/assets/css/components/sidebar.css";
+@import "/_includes/assets/css/components/writing-clip.css";
+@import "/_includes/assets/css/components/reel.css";

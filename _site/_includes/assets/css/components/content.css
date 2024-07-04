@@ -1,0 +1,24 @@
+.content {
+    max-height: 100vh;
+    padding-top: var(--s1);
+    padding-bottom: var(--s1);
+    padding-left: var(--s1);
+    padding-right: var(--s1);
+    overflow-y: scroll;
+    line-height: 1.5;
+
+    section {
+        width: 100%;
+        max-width: calc(0.333vw + 40rem);
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 40rem) {
+    .content {
+        padding-bottom: var(--s5);
+        overflow-y: auto;
+        max-height: fit-content;
+    }
+    
+}
