@@ -91,3 +91,10 @@ p {
     line-height: var(--line-height);
     max-width: var(--measure-max);
 }
+
+@media screen and (max-width: 40rem){
+    h3,
+    .h3 {
+        font-size: var(--s1);
+    }
+}
