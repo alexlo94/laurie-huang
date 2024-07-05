@@ -43,10 +43,12 @@ tags: pages
 
                 {%-else-%}
                     <article class="clip">
-                        <div class="stack clip-content">
-                            <h3>{{ clip.title }}</h3>
-                            <p><a href="{{ clip.url }}">Read More</a></p>
-                        </div>
+                        <a href="{{ clip.url }}">
+                            <div class="stack clip-content">
+                                <h3>{{ clip.title }}</h3>
+                                <p><a href="{{ clip.url }}">Read More</a></p>
+                            </div>
+                        </a>
                         <div class="clip-background"></div>
                         <div class="frame clip-frame">
                             <img src="{{ clip.thumbnail }}" alt="{{ clip.thumbnailAlt }}"/>
