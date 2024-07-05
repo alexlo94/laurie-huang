@@ -85,12 +85,16 @@ h6,
 a:hover {
     text-decoration: underline;
 }
-a::after {
-    content: " »";
-}
 
 p {
     font-size: var(--s0);
     line-height: var(--line-height);
     max-width: var(--measure-max);
+}
+
+@media screen and (max-width: 40rem){
+    h3,
+    .h3 {
+        font-size: var(--s1);
+    }
 }
