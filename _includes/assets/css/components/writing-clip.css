@@ -1,10 +1,6 @@
 .writing-clip {
-    border-left: 3.5px solid;
-    border-radius: 0;
+    position: relative;
     padding-left: var(--s1);
-    transition: border 0.5s;
-
-    border-radius: 2px;
 
     h3 {
         line-height: calc(var(--line-height) * 0.9);
@@ -27,6 +23,20 @@
     }
 }
 
-.writing-clip:hover {
-    border-left: 7px solid;
+.writing-clip:hover::before {
+        width: 7px;
+}
+
+.writing-clip::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    background-color: var(--color-lightest);
+    top: 0;
+    left: 0;
+
+    transition: width 0.5s;
+
+    width: 2px;
+    z-index: 1;
 }
