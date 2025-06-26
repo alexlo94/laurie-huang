@@ -6,16 +6,19 @@ tags: pages
 <div class="stack s5">
     <section id="about" class="stack">
         <h2>About</h2>
-        <p>Formerly a linguistic journal editor in China, Leyi Huang pivoted to impact-driven storytelling in 2021 when she woke up one day and decided to make a documentary film about an underground LGBTQ movement in China. Back then, all she had was a Sony DSLR, an iPhone, and her fervent passion for LGBTQ advocacy.</p>
-        <p>In 2022, Leyi brought her project, Purple Ballroom, to Chicago and launched a career as a journalist and documentary filmmaker. Below is some of her work.</p>
+        <p>Formerly a linguistic journal editor in China, Leyi Huang pivoted to impact-driven storytelling in 2021 when
+            she woke up one day and decided to make a documentary film about an underground LGBTQ movement in China.
+            Back then, all she had was a Sony DSLR, an iPhone, and her fervent passion for LGBTQ advocacy.</p>
+        <p>In 2022, Leyi brought her project, Purple Ballroom, to Chicago and launched a career as a journalist and
+            documentary filmmaker. Below is some of her work.</p>
     </section>
     <section id="writing-clips" class="stack">
         <h2>Writing Clips</h2>
         <div class="stack s5">
-        {# {%-for clip in metadata.clips-%}
+            {# {%-for clip in metadata.clips-%}
             <article class="with-sidebar s3 writing-clip">
                 <aside class="frame">
-                    <img src="{{ clip.thumbnail }}" alt="{{ clip.thumbnailAlt }}"/>
+                    <img src="{{ clip.thumbnail }}" alt="{{ clip.thumbnailAlt }}" />
                 </aside>
                 <main class="stack">
                     <h3>{{ clip.title }}</h3>
@@ -23,7 +26,7 @@ tags: pages
                     <p><a href="{{ clip.url }}">Read More</a></p>
                 </main>
             </article>
-        {%-endfor-%} #}
+            {%-endfor-%} #}
         </div>
         <div class="stack s5">
             {# {%-for clip in metadata.clips-%}
@@ -34,27 +37,27 @@ tags: pages
             </article>
             {%-endfor-%} #}
             {%-for clip in metadata.clips-%}
-                {%-if clip.thumbnail == ""-%}
-                    <article class="stack s1 writing-clip">
-                        <h3>{{ clip.title }}</h3>
-                        <p>{{ clip.preview }}</p>
-                        <p><a href="{{ clip.url }}">Read More</a></p>
-                    </article>
+            {%-if clip.thumbnail == ""-%}
+            <article class="stack s1 writing-clip">
+                <h3>{{ clip.title }}</h3>
+                <p>{{ clip.preview }}</p>
+                <p><a href="{{ clip.url }}">Read More</a></p>
+            </article>
 
-                {%-else-%}
-                    <article class="clip">
-                        <a href="{{ clip.url }}">
-                            <div class="stack clip-content">
-                                <h3>{{ clip.title }}</h3>
-                                <p><a href="{{ clip.url }}">Read More</a></p>
-                            </div>
-                        </a>
-                        <div class="clip-background"></div>
-                        <div class="frame clip-frame">
-                            <img src="{{ clip.thumbnail }}" alt="{{ clip.thumbnailAlt }}"/>
-                        </div>
-                    </article>
-                {%-endif-%}
+            {%-else-%}
+            <article class="clip">
+                <a href="{{ clip.url }}">
+                    <div class="stack clip-content">
+                        <h3>{{ clip.title }}</h3>
+                        <p><a href="{{ clip.url }}">Read More</a></p>
+                    </div>
+                </a>
+                <div class="clip-background"></div>
+                <div class="frame clip-frame">
+                    <img src="{{ clip.thumbnail }}" alt="{{ clip.thumbnailAlt }}" />
+                </div>
+            </article>
+            {%-endif-%}
             {%-endfor-%}
         </div>
     </section>
@@ -67,34 +70,58 @@ tags: pages
                     <p class="reel-caption">Leyi Huang’s 2023 reel of short docs</p>
                 </header>
                 <figure class="frame">
-                    <iframe src="https://player.vimeo.com/video/873035725?h=80f20619fb" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                    <iframe src="https://player.vimeo.com/video/873035725?h=80f20619fb" width="640" height="360"
+                        frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
                 </figure>
             </article>
             <article class="stack reel">
                 <header class="stack s-5">
                     <h3>Purple Ballroom</h3>
-                    <p class="reel-caption">Purple Ballroom (work-in-progress) is about a Chinese vogue dancer who founded the LGBTQ+ Ballroom scene in Canton, China, as a shelter for the local queer communities against stigma and alienation.</p>
+                    <p class="reel-caption">Purple Ballroom (work-in-progress) is about a Chinese vogue dancer who
+                        founded the LGBTQ+ Ballroom scene in Canton, China, as a shelter for the local queer communities
+                        against stigma and alienation.</p>
                 </header>
                 <figure class="frame">
-                    <iframe src="https://player.vimeo.com/video/860084211?h=f149a7efb8" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                    <iframe src="https://player.vimeo.com/video/860084211?h=f149a7efb8" width="640" height="360"
+                        frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
                 </figure>
             </article>
             <article class="stack reel">
                 <header class="stack s-5">
-                    <h3>Two Experimental Dance Videos</h3>
+                    <h3>Covers for Cover</h3>
+                    <p class="reel-caption">Event recap for Covers for Cover, a fundraising concert in support of Brave
+                        Space Alliance, a Black- and Trans-led LGBTQ+ center based on Chicago’s South Side</p>
+                </header>
+                <figure class="frame">
+                    <iframe src="https://player.vimeo.com/video/1096475141?h=6496194a22" width="640" height="360"
+                        frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                </figure>
+            </article>
+            <article class="stack reel">
+                <header class="stack s-5">
+                    <h3>Experimental Dance Videos</h3>
                     <p class="reel-caption">Credit: Assistant Director of Photography</p>
                 </header>
                 <figure class="frame">
-                    <iframe width="640" height="360" src="https://www.youtube.com/embed/gnND1thqw9o?si=Hc6efRS2fswJZnF7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="640" height="360" src="https://www.youtube.com/embed/gnND1thqw9o?si=Hc6efRS2fswJZnF7"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </figure>
                 <figure class="frame">
-                    <iframe width="640" height="360" src="https://www.youtube.com/embed/1-VWoAWYwPc?si=OdYIXX08AFFMWNPt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="640" height="360" src="https://www.youtube.com/embed/1-VWoAWYwPc?si=OdYIXX08AFFMWNPt"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </figure>
             </article>
         </div>
     </section>
     <section id="contact" class="stack">
         <h2>Contact</h2>
-        <p> With a focus on gender equity and social justice reporting, Leyi is always looking for creative collaboration on subject matter projects. If you are interested in bringing her to your production team, feel free to contact her through <a href="mailto:lauriehuang9711@gmail.com" class="email">email</a> or <a href="https://www.linkedin.com/in/leyi-huang-607813183/" class="linkedin">LinkedIn</a></p>
+        <p> With a focus on gender equity and social justice reporting, Leyi is always looking for creative
+            collaboration on subject matter projects. If you are interested in bringing her to your production team,
+            feel free to contact her through <a href="mailto:lauriehuang9711@gmail.com" class="email">email</a> or <a
+                href="https://www.linkedin.com/in/leyi-huang-607813183/" class="linkedin">LinkedIn</a></p>
     </section>
 </div>
